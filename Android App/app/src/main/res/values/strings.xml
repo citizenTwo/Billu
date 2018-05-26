@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Social</string>
+    <string name="facebook_app_id">1810416389263053</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="social_store">Social Store</string>
+
+    <string name="rupee_symbol">₹</string>
+</resources>

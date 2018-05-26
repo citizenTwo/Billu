@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xyz.mrdeveloper.social.CheckoutActivity">
+
+    <!--<ImageView-->
+    <!--android:id="@+id/image_checkout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/checkout" />-->
+
+    <TextView
+        android:id="@+id/text_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:padding="20dp"
+        android:text="CART"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/roboto_thin"
+        android:padding="20dp"
+        android:text="Getting you items from the Cloud\nPlease wait..."
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/text_token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/roboto_thin"
+        android:padding="20dp"
+        android:text="42"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="35dp" />
+
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="70dp"-->
+    <!--android:fontFamily="@font/quicksand_bold"-->
+    <!--android:padding="10dp"-->
+    <!--android:text="Social Store"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="32dp" />-->
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text_token" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linear_layout1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="TOTAL AMOUNT"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            android:onClick="CancelCheckout"/>
+
+        <TextView
+            android:id="@+id/text_total_amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="28dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center"
+            android:text="₹0"
+            android:onClick="DoCheckout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorPrimary"
+            android:text="CANCEL"
+            android:onClick="CancelCheckout"/>
+
+        <Button
+            android:id="@+id/button_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="CHECKOUT"
+            android:onClick="DoCheckout" />
+    </LinearLayout>
+
+</RelativeLayout>
